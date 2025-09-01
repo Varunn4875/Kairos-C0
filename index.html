@@ -7,6 +7,8 @@
 
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -25,13 +27,13 @@
 	  <div class="swiper mySidebar">
 	    <div class="swiper-wrapper">
 	      <div class="swiper-slide">
-	        <a href="#">Home</a>
-	        <a href="#">Features</a>
-	        <a href="#">Products</a>
-	        <a href="#">Categories</a>
-	        <a href="#">Review</a>
-	        <a href="#">Blogs</a>
-	        <a href="#">Sort</a>
+	        <a href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
+	        <a href="#"><i class="fa-solid fa-star"></i>&nbsp;&nbsp;Features</a>
+	        <a href="#"><i class="fa-brands fa-product-hunt"></i>&nbsp;&nbsp;Products</a>
+	        <a href="#"><b><i class="fa-solid fa-list"></i></b>&nbsp;&nbsp;Categories</a>
+	        <a href="#"><b><i class="fa-brands fa-reddit"></i></b>&nbsp;&nbsp;Review</a>
+	        <a href="#"><b><i class="fa-solid fa-envelope"></i></b>&nbsp;&nbsp;Blogs</a>
+	        <a href="#"><b><i class="bi bi-funnel-fill"></i></b>&nbsp; &nbsp;Sort </a>
 	      </div>
 	    </div>
 	  </div>
@@ -47,7 +49,7 @@
     // Initialize Swiper for sidebar
     const sidebar = new Swiper('.mySidebar', {
       direction: 'horizontal',
-      allowTouchMove: false, // disable swiping manually
+      allowTouchMove: true, // disable swiping manually
     });
 
     const menuBtn = document.querySelector('.menu-btn');
