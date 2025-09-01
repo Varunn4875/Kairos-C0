@@ -8,7 +8,7 @@
     /* Top Navbar */
     .navbar {
       background: #fff;
-      padding: 10px 20px;
+      padding: 0px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -30,16 +30,15 @@
       border-radius: 5px;
     }
 
-    /* Sidebar using Swiper */
     .swiper {
       position: fixed;
-      top: 0;
+      top: 50px;
       right: 0;
       width: 250px;
       height: 100%;
       background: #fff;
       box-shadow: -2px 0 10px rgba(0,0,0,0.2);
-      transform: translateX(100%); /* hidden initially */
+      transform: translateX(100%); 
       z-index: 999;
     }
 
@@ -57,10 +56,8 @@
       transition: ease-in all 0.2s ;
     }
     .swiper-slide a:hover{
-    	transform: scale(1.5);
+    	transform: scale(1.2);
     }
-
-    /* Overlay background */
     .overlay {
       position: fixed;
       top: 0;
@@ -76,7 +73,26 @@
     	height: 400px;
     	width: 100%;
     	object-fit: cover;
+      display: flex;
     }
+    .content {
+    display: flex;
+    position: absolute;
+    top: 40%;       
+    left: 50%;      
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bolder;
+    padding: 10px 20px;
+  }
+  @media(max-width: 992px)
+  {
+    .content{
+      font-size: 3vw;
+    }
+  }
 
     .features-section {
       max-width: 1200px;
@@ -121,3 +137,76 @@
       line-height: 1.6;
       color: #555;
     }
+    .img1{
+      background-image: url("making.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+    }
+    .img2{
+      background-image: url("materials.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+    }
+    .img3{
+      background-image: url("movement.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+    }
+    .img4{
+      background-image: url("heritage.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+    }
+    .img5{
+      background-image: url("design.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+    }
+    .img6{
+      background-image: url("sustain.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+    }
+    .img7{
+      background-image: url("exclusive.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+    }
+    .img8{
+      background-image: url("guarantee.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+    }
+
