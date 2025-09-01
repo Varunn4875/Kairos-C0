@@ -1,14 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Kairos&CO.</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swiper Sidebar Menu</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+    }
+
+    /* Top Navbar */
+    .navbar {
+      background: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu-btn {
+      font-size: 22px;
+      cursor: pointer;
+      background: orange;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+
+    /* Sidebar using Swiper */
+    .swiper {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 100%;
+      background: #fff;
+      box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+      transform: translateX(100%); /* hidden initially */
+      z-index: 999;
+    }
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+
+    .swiper-slide a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px 0;
+      font-size: 18px;
+    }
+
+    /* Overlay background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      z-index: 998;
+    }
+  </style>
 </head>
 <body>
-	<center><h1>Hey There </h1></center>
-	<center><p>The site is under construction</p></center>
 
+  <!-- Navbar -->
+  <div class="navbar">
+    <h2>Grocery</h2>
+    <button class="menu-btn">☰</button>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Swiper Sidebar -->
+  <div class="swiper mySidebar">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">Review</a>
+        <a href="#">Blogs</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper for sidebar
+    const sidebar = new Swiper('.mySidebar', {
+      direction: 'horizontal',
+      allowTouchMove: false, // disable swiping manually
+    });
+
+    const menuBtn = document.querySelector('.menu-btn');
+    const overlay = document.querySelector('.overlay');
+    const sidebarEl = document.querySelector('.mySidebar');
+
+    // Toggle Sidebar
+    menuBtn.addEventListener('click', () => {
+      sidebarEl.style.transform = "translateX(0)"; // slide in
+      overlay.style.display = "block";
+    });
+
+    // Close Sidebar when overlay clicked
+    overlay.addEventListener('click', () => {
+      sidebarEl.style.transform = "translateX(100%)"; // slide out
+      overlay.style.display = "none";
+    });
+  </script>
 </body>
 </html>
