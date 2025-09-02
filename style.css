@@ -222,6 +222,9 @@
       margin-bottom: 40px;
       color: #111;
     }
+    .products-card{
+      width: 280px;
+    }
     .pro-img1{
       background-image: url("adam-bignell-Zkf5HBAbQWc-unsplash.jpg");
       background-size: cover;
@@ -230,19 +233,6 @@
       width: 100%;
       border-radius: 15px;
       transition: ease-in 0.5s ;
-
-    }
-    .products-grid{
-      display: grid;
-      grid-template-columns:repeat(auto-fit, minmax(360px, 1fr));
-      gap: 30px;
-    }
-    .products-card {
-      /*background: #fff;*/
-      padding: 25px;
-      border-radius: 12px;
-      /*box-shadow: 0 4px 12px rgba(0,0,0,0.08);*/
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .products-card h3{
        font-size: 1.3rem;
