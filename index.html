@@ -16,28 +16,29 @@
 <body>
 
   <!-- Navbar -->
-	  <div class="navbar">
-	    <h2><img src="ChatGPT Image Aug 31, 2025, 03_10_18 PM.png" height="70px" width="70px"></h2>
-	    <button class="menu-btn">&#9776;</button>
-	  </div>
+    <div class="navbar">
+      <h2><img src="ChatGPT Image Aug 31, 2025, 03_10_18 PM.png" height="70px" width="70px"></h2>
+      <h3>Since 1892</h3>
+      <button class="menu-btn">&#9776;</button>
+    </div>
 
-	  <!-- Overlay -->
-	  <div class="overlay"></div>
+    <!-- Overlay -->
+    <div class="overlay"></div>
 
-	  <!-- Swiper Sidebar -->
-	  <div class="swiper mySidebar">
-	    <div class="swiper-wrapper">
-	      <div class="swiper-slide">
-	        <a href="#">&nbsp;&nbsp;Home</a>
-	        <a href="#home"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
-	        <a href="#features"><i class="fa-solid fa-star"></i>&nbsp;&nbsp;Features</a>
-	        <a href="#"><i class="fa-brands fa-product-hunt"></i>&nbsp;&nbsp;Products</a>
-	        <a href="#"><b><i class="fa-solid fa-list"></i></b>&nbsp;&nbsp;Categories</a>
-	        <a href="#"><b><i class="bi bi-funnel-fill"></i></b>&nbsp; &nbsp;Sort </a>
-	        <a href="login.html"><b><i class="bi bi-person-fill"></i></b>&nbsp; &nbsp;Login</a>
-	      </div>
-	    </div>
-	  </div>
+    <!-- Swiper Sidebar -->
+    <div class="swiper mySidebar">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#">&nbsp;&nbsp;Home</a>
+          <a href="#home"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
+          <a href="#features"><i class="fa-solid fa-star"></i>&nbsp;&nbsp;Features</a>
+          <a href="#"><i class="fa-brands fa-product-hunt"></i>&nbsp;&nbsp;Products</a>
+          <a href="#"><b><i class="fa-solid fa-list"></i></b>&nbsp;&nbsp;Categories</a>
+          <a href="#"><b><i class="bi bi-funnel-fill"></i></b>&nbsp; &nbsp;Sort </a>
+          <a href="login.html"><b><i class="bi bi-person-fill"></i></b>&nbsp; &nbsp;Login</a>
+        </div>
+      </div>
+    </div>
 <section id="home">
   <video autoplay muted loop id="myvideo">
     <source src="34855-403777679.mp4" type="video/mp4">
@@ -58,6 +59,7 @@
         <h3>Our Craftsmanship</h3>
         <div class="img1"></div>
         <p>Hand-assembled with meticulous precision by master watchmakers, each piece reflects true horological artistry.</p>
+        <button class="read">Read more</button>
       </div>
 
       <div class="feature-card" data-aos="fade-right"
@@ -109,6 +111,38 @@
 
     </div>
   </section>
+  <section id="products" class="products-section">
+    <center><h2>Explore the line up.</h2></center>
+    <div class="products-grid">
+      <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Classic</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
+       <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Sport</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
+    
+     <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Chronographs</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
+    <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Pilot</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
+    <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Field</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
+  </div>
+    
+  </section>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -116,7 +150,7 @@
     // Initialize Swiper for sidebar
     const sidebar = new Swiper('.mySidebar', {
       direction: 'horizontal',
-      allowTouchMove: true, // disable swiping manually
+      allowTouchMove: true, 
     });
 
     const menuBtn = document.querySelector('.menu-btn');
