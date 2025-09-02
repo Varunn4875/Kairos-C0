@@ -3,7 +3,6 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f8f8f8;
-      scroll-behavior: smooth;
     }
     *{
       overflow-x: hidden ;
@@ -28,14 +27,6 @@
       padding: 8px 12px;
       border-radius: 5px;
     }
-    .span{
-      clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
-      background-color: orange;
-    }
-    .content h1{
-      color: #1d1d1f;
-    }
-
     .swiper {
       position: fixed;
       top: 50px;
@@ -55,7 +46,8 @@
     }
     .content h1{
       font-size: 35px;
-      }
+      color: #1d1d1f;
+    }
 
     .swiper-slide a {
       text-decoration: none;
