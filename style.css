@@ -56,7 +56,6 @@
     .swiper-slide {
       display: flex;
       flex-direction: column;
-      padding: 0px 0px;
       align-items: left;
     }
     .content h1{
