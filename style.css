@@ -264,12 +264,6 @@
       height: 450px;
     }
 
-    .swiper-slide img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-bottom: 10px;
-    }
-
     /* Navigation buttons */
     .swiper-button-next,
     .swiper-button-prev {
