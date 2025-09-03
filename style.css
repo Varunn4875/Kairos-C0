@@ -292,7 +292,7 @@
       opacity: 1;
     }
     .pro-img1{
-      background-image: url("movement.jpg");
+      background-image: url("istockphoto-2148772819-1024x1024.jpg");
       background-size: cover;
       background-position: center;
       height: 300px;
@@ -301,4 +301,3 @@
       transition: ease-in 0.5s ;
       align-items: center;
     }
-
