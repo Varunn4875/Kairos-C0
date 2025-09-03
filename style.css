@@ -295,8 +295,9 @@
       background-size: cover;
       background-position: center;
       height: 300px;
-      width: 100%;
+      max-width: 100%;
       border-radius: 15px;
       transition: ease-in 0.5s ;
+      align-items: center;
     }
 
