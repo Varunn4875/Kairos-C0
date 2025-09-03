@@ -252,7 +252,8 @@
     .swiper-slide {
       background: #f4f4f4;
       border-radius: 20px;
-      padding: 40px;
+      padding: 40px 40px;
+      margin: 0px 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
