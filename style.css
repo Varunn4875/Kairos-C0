@@ -43,20 +43,21 @@
     }
     .swiper {
       position: fixed;
-      top: 30px;
+      top: 0px;
       right: 0;
       width: 250px;
       height: 100%;
       background: #fff;
       box-shadow: -2px 0 10px rgba(0,0,0,0.2);
-      transform: translateX(150%); 
+      transform: translateX(100%); 
       z-index: 999;
     }
 
     .swiper-slide {
       display: flex;
       flex-direction: column;
-      padding: 40px 20px;
+      padding: 0px 0px;
+      align-items: left;
     }
     .content h1{
       font-size: 35px;
@@ -218,7 +219,7 @@
     .products-section  {
        max-width: 1200px;
       margin: auto;
-      padding: 60px 20px;
+      /*padding: 60px 20px;*/
       text-align: center;
       background-color: #f5f5f7;
     }
@@ -244,3 +245,59 @@
       margin-bottom: 15px;
       color: #222;
     }
+    .swipers {
+      width: 50%;
+      padding: 20px 0 50px; /* extra space for dots */
+    }
+
+    .swiper-slide {
+      background: #f4f4f4;
+      border-radius: 20px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #111;
+      height: 450px;
+    }
+
+    .swiper-slide img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    /* Navigation buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000;
+      bottom: 0px;
+    }
+
+    /* Pagination dots */
+    .swiper-pagination {
+      bottom: 0px ;
+    }
+
+    .swiper-pagination-bullet {
+      background: #888;
+      opacity: 0.6;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #000;
+      opacity: 1;
+    }
+    .pro-img1{
+      background-image: url("movement.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+    }
+

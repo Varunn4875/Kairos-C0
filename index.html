@@ -30,7 +30,6 @@
     <div class="swiper mySidebar">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <a href="#">&nbsp;&nbsp;Home</a>
           <a href="#home"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
           <a href="#features"><i class="fa-solid fa-star"></i>&nbsp;&nbsp;Features</a>
           <a href="#"><i class="fa-brands fa-product-hunt"></i>&nbsp;&nbsp;Products</a>
@@ -115,7 +114,51 @@
   <section id="products" class="products-section" style="position: relative;">
     <center><h2>Explore the line up.</h2></center>
       
+   <div class="swipers mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background:#e8f7f1;">
+        <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Classic</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
+      </div>
+      <div class="swiper-slide" style="background:#c9e8ff;">
+        <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Classic</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
+      </div>
+      <div class="swiper-slide" style="background:#e8f7f1;">
+        <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Classic</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
+      </div>
+      <div class="swiper-slide" style="background:#c9e8ff;">
+       <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Classic</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
+      </div>
+      <!-- <div class="swiper-slide" style="background:#00b894; color:#fff;">
+        <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Classic</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
+      </div> -->
     </div>
+
+    <!-- Navigation Arrows -->
+  
+
+    <!-- Pagination Dots -->
+    <div class="swiper-pagination"></div>
+  </div>
     
   </section>
 
@@ -143,6 +186,39 @@
       sidebarEl.style.transform = "translateX(100%)"; // slide out
       overlay.style.display = "none";
     });
+  </script>
+
+  <script>
+   var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  centeredSlidesBounds: true, 
+  centeredSlides: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 1,
+    }
+  }
+});
+
+
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
