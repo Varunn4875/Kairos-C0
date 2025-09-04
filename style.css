@@ -340,9 +340,7 @@
   transform: scale(1.2);
 }
 
-.icons{
-  /*display: flex;
-  justify-content: space-between;*/
+.icons i{
   font-size: 20px;
   margin: 0px 0px;
   cursor: pointer;
