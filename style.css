@@ -234,14 +234,43 @@
     .products-card{
       width: 280px;
     }
-    .pro-img1{
-      background-image: url("adam-bignell-Zkf5HBAbQWc-unsplash.jpg");
+    .pro-img2{
+       background-image: url("movement.jpg");
       background-size: cover;
       background-position: center;
-      height: 200px;
+      height: 220px;
       width: 100%;
       border-radius: 15px;
       transition: ease-in 0.5s ;
+    }
+    .pro-img3{
+       background-image: url("pexels-ferarcosn-190819.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+    }
+    .pro-img4{
+      background-image: url("materials.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+    }
+    .pro-img5{
+       background-image: url("design.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      width: 100%;
+      border-radius: 15px;
+      transition: ease-in 0.5s ;
+
+    }
     }
     .products-card h3{
        font-size: 1.3rem;
