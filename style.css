@@ -232,13 +232,13 @@
       color: #111;
     }
     .products-card{
-      width: 280px;
+      width: 300px;
     }
     .pro-img2{
        background-image: url("movement.jpg");
       background-size: cover;
       background-position: center;
-      height: 200px;
+      height: 180px;
       width: 100%;
       border-radius: 15px;
       transition: ease-in 0.5s ;
@@ -247,7 +247,7 @@
        background-image: url("pexels-ferarcosn-190819.jpg");
       background-size: cover;
       background-position: center;
-      height: 200px;
+      height: 180px;
       width: 100%;
       border-radius: 15px;
       transition: ease-in 0.5s ;
@@ -256,7 +256,7 @@
       background-image: url("materials.jpg");
       background-size: cover;
       background-position: center;
-      height: 200px;
+      height: 180px;
       width: 100%;
       border-radius: 15px;
       transition: ease-in 0.5s ;
@@ -265,7 +265,7 @@
        background-image: url("design.jpg");
       background-size: cover;
       background-position: center;
-      height: 200px;
+      height: 180px;
       width: 100%;
       border-radius: 15px;
       transition: ease-in 0.5s ;
