@@ -36,36 +36,32 @@
         margin: 0;
         padding: 0;
       }
+      /*.container{
+       margin-top: 100px;
+      }*/
 
       .swiper {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: auto;
         /*padding: 50px;*/
-        margin: 50px 0px;
-        transform-style: preserve-3d;
-        margin-left: auto;
-        margin-right: auto;
-      }
+        /*margin-inline: auto;*/
+        transform-style: preserve-3d;      }
 
       .swiper-slide {
         background-position: cover;
         background-size: cover;
-        width: 500px;
-        height: 500px;
       }
-      @media(max-width: 992px){
+     /*@media(max-width: 992px){
         .swiper{
           width: 400px;
         height: 400px;
         padding: 50px ;
-        transform-style: preserve-3d;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-        }
+        margin: auto;
+        margin-block-start: 100px;
+        transform-style: preserve-3d;        }
       }
-
-      .swiper-slide img {
+*/
+       /*.swiper-slide img {
         display: block;
         width: 100%;
         height: 400px;
@@ -77,7 +73,7 @@
       }
       .container{
        margin-top: 100px;
-      }
+      }*/
     </style>
   </head>
 
@@ -106,28 +102,28 @@
       </div>
     </div>
     <!-- Swiper -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="container-fluid my-5">
+      <div class="row align-items-center my-5">
+        <div class="col-md-5 ">
           <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="sam1.webp" />
+          <img src="sam1.webp" class="img-fluid" >
         </div>
         <div class="swiper-slide">
-          <img src="sam2.webp" />
+          <img src="sam2.webp" class="img-fluid">
         </div>
         <div class="swiper-slide">
-          <img src="sam3.webp" />
+          <img src="sam3.webp"  class="img-fluid">
         </div>
         <div class="swiper-slide">
-          <img src="sam4.webp" />
+          <img src="sam4.webp" class="img-fluid" >
         </div>
         <div class="swiper-slide">
-          <img src="sam5.webp" />
+          <img src="sam5.webp" class="img-fluid">
         </div>
         <div class="swiper-slide">
-          <img src="sam1.webp" />
+          <img src="sam1.webp" class="img-fluid">
         </div>
       </div>
       <!-- <div class="swiper-button-next"></div>
@@ -136,7 +132,7 @@
     </div>
         </div>
     
-             <div class="col-lg-6 col-md-6 col-sm-12" style="margin: 30px 0px;">
+             <div class=" col-md-7 align-items-center ">
 
               <h1><q>Poseidon Edition</q>  by Kairos&Co - Automatic Watch - 200M - NH38 Swiss Movement</h1>
               <h3>Rs.10,250.00/-</h3>
